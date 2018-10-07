@@ -4,10 +4,11 @@ import org.testng.annotations.Test;
 
 import com.ProjectByJai.pageObject.LoginPage;
 import com.ProjectByJai.pageObject.RegistrationPage;
+import com.ProjectByJai.testBase.TestBase;
 
 
 
-public class RegistrationTest
+public class RegistrationTest extends TestBase
 {
 	@Test
 	public void testRegistration()

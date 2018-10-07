@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.ProjectByJai.constant.Constant;
 import com.ProjectByJai.helper.LoggerHelper;
+import com.ProjectByJai.testBase.TestBase;
 
 public class ProductCategoryPage 
 {
@@ -37,15 +38,18 @@ public class ProductCategoryPage
 	public ProductCategoryPage()
 	{
 		PageFactory.initElements(Constant.driver, this);
+		TestBase.logExtentReport("Product Category Page object created");
 	}
 	
 	public void clickOnAddToCart(){
-		log.info("clickin on add to cart");
+		log.info("clicking on add to cart");
+		TestBase.logExtentReport("clickin on add to cart");
 		addToCart.click();
 	}
 	
 	public void clickOnProceedTocheckOut(){
-		
+		log.info("clicking on proceed to checkout button");
+		TestBase.logExtentReport("clicking on proceed to checkout button");
 		proceedToCheckOut.click();
 	}
 }
