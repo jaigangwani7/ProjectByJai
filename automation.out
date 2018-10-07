@@ -1,0 +1,39 @@
+2018-10-06 17:10:722 INFO  LoggerHelper:23 - Checking for working
+2018-10-06 18:10:714 INFO  AssertHelper:16 - making script Fail..
+2018-10-06 18:10:109 INFO  AssertHelper:16 - making script Fail..
+2018-10-06 18:10:876 INFO  AssertHelper:11 - making script PASS..
+2018-10-06 18:10:905 INFO  AssertHelper:16 - making script Fail..
+2018-10-06 19:10:703 INFO  TestBase:39 - **************testLoginStarted***************
+2018-10-06 19:10:725 INFO  AssertHelper:11 - making script PASS..
+2018-10-06 19:10:740 INFO  TestBase:56 - **************testLoginFinished***************
+2018-10-06 19:10:849 INFO  TestBase:39 - **************testLogin1Started***************
+2018-10-06 19:10:852 INFO  AssertHelper:16 - making script Fail..
+2018-10-06 19:10:887 INFO  TestBase:56 - **************testLogin1Finished***************
+2018-10-06 21:10:408 INFO  TestBase:41 - **************testValidLoginStarted***************
+2018-10-06 21:10:573 INFO  LoginPage:40 - clicked on sign in link...
+2018-10-06 21:10:781 INFO  TestBase:65 - **************testValidLoginFinished***************
+2018-10-06 21:10:940 INFO  TestBase:41 - **************testValidLoginStarted***************
+2018-10-06 21:10:25 INFO  LoginPage:40 - clicked on sign in link...
+2018-10-06 21:10:762 INFO  LoginPage:45 - entering email address....1529686406836@gmail.com
+2018-10-06 21:10:295 INFO  LoginPage:50 - entering password....password
+2018-10-06 21:10:590 INFO  LoginPage:55 - clicking on submit button...
+2018-10-06 21:10:112 INFO  TestBase:65 - **************testValidLoginFinished***************
+2018-10-07 17:10:125 INFO  TestBase:41 - **************testValidLoginStarted***************
+2018-10-07 17:10:518 INFO  LoginPage:40 - clicked on sign in link...
+2018-10-07 17:10:689 INFO  LoginPage:45 - entering email address....1529686406836@gmail.com
+2018-10-07 17:10:361 INFO  LoginPage:50 - entering password....password
+2018-10-07 17:10:693 INFO  LoginPage:55 - clicking on submit button...
+2018-10-07 17:10:530 INFO  TestBase:65 - **************testValidLoginFinished***************
+2018-10-07 18:10:274 INFO  TestBase:41 - **************testTillPaymentPageStarted***************
+2018-10-07 18:10:389 INFO  LoginPage:40 - clicked on sign in link...
+2018-10-07 18:10:273 INFO  LoginPage:45 - entering email address....1529686406836@gmail.com
+2018-10-07 18:10:942 INFO  LoginPage:50 - entering password....password
+2018-10-07 18:10:259 INFO  LoginPage:55 - clicking on submit button...
+2018-10-07 18:10:598 INFO  NavigationMenu:35 - doing mouse over on :Women
+2018-10-07 18:10:799 INFO  NavigationMenu:41 - click on : Women
+2018-10-07 18:10:815 INFO  ProductCategoryPage:43 - clickin on add to cart
+2018-10-07 18:10:657 INFO  ShoppinCartSummaryPage:43 - Clicked on Proceed to Checkout At Cart
+2018-10-07 18:10:580 INFO  ShoppinCartSummaryPage:49 - Clicked on Proceed to Checkout At Address
+2018-10-07 18:10:469 INFO  ShoppinCartSummaryPage:55 - Clicked on Terms and Services
+2018-10-07 18:10:711 INFO  ShoppinCartSummaryPage:61 - Clicked on Proceed to Checkout At Shipping
+2018-10-07 18:10:307 INFO  TestBase:65 - **************testTillPaymentPageFinished***************
