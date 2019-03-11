@@ -20,13 +20,19 @@ public class WaitHelper
 	
 	public WebElement waitForElement(WebDriver driver,long time,WebElement element)
 	{
-		WebDriverWait wait = new WebDriverWait(driver, time);
+		WebDriverWait wait = new WebDriverWait(Constant.driver, time);
 		return wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
-	public void explicitlyWaitTimeWaitTime (int time, String xpath)
+	public static void explicitlyWaitTimeWaitTime (int time, String xpath)
 	{
 		WebDriverWait wait= new WebDriverWait(Constant.driver, time);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
 	}	
+	
+	public static void explicitlyWaitTimeForFrameAndSwitch(int time, String id)
+	{
+		WebDriverWait wait= new WebDriverWait(Constant.driver, time);
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.id(id)));
+	}
 }

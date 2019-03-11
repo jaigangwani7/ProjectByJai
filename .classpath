@@ -22,5 +22,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/Users/jgangwan/Desktop/softwares/Selenium and Java/Jars/libs/log4j-1.2.15.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

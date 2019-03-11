@@ -16,8 +16,8 @@ public class TillPaymentPage extends TestBase
 	@Test
 	public void testTillPaymentPage()
 	{
-		LoginPage loginTest = new LoginPage();
-		loginTest.loginToApplication(Constant.userName,Constant.passWord);
+		//LoginPage loginTest = new LoginPage();
+		//loginTest.loginToApplication(Constant.userName,Constant.passWord);
 		NavigationMenu menu = new NavigationMenu();
 		menu.mouseOver("Women");
 		menu.clickOnIntem("Women");

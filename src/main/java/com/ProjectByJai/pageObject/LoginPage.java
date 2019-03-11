@@ -34,6 +34,7 @@ public class LoginPage
 	public LoginPage()
 	{
 		PageFactory.initElements(Constant.driver, this);
+		log.info("Login Page Object Created");
 		TestBase.logExtentReport("Login Page Object Created");
 	}
 	
