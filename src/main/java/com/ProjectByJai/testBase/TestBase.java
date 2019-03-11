@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -23,11 +22,12 @@ import com.aventstack.extentreports.Status;
 public class TestBase 
 {
 
-	public WebDriver driver;
+	
 	private Logger log = LoggerHelper.takeLogger(TestBase.class);
 
 	@BeforeSuite
-	public void beforeSuite() throws Exception{
+	public void beforeSuite() throws Exception
+	{
 	 ReportFunction.extentReportingMethod();
 	}
 	@BeforeClass
@@ -36,7 +36,8 @@ public class TestBase
 		ReportFunction.test = ReportFunction.extent.createTest(getClass().getSimpleName());
 	}
 	@BeforeMethod
-	public void beforeMethod(Method method){
+	public void beforeMethod(Method method)
+	{
 		ReportFunction.test.log(Status.INFO, method.getName()+"**************test started***************");
 		log.info("**************"+method.getName()+"Started***************");
 	}
@@ -50,7 +51,8 @@ public class TestBase
 	}
 	
 	@AfterMethod
-	public void afterMethod(ITestResult result) throws IOException{
+	public void afterMethod(ITestResult result) throws IOException
+	{
 		if(result.getStatus() == ITestResult.FAILURE){
 			ReportFunction.test.log(Status.FAIL, result.getThrowable());
 			
@@ -67,9 +69,15 @@ public class TestBase
 	}
 	
 	@AfterTest
-	public void afterTest() throws Exception{
-		if(driver!=null){
-			driver.quit();
+	public void afterTest() throws Exception
+	{
+		if(Constant.driver!=null)
+		{
+			Constant.driver.quit();
 		}
+	}
+	
+	public static void logExtentReport(String s1){
+		ReportFunction.test.log(Status.INFO, s1);
 	}
 }

@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.ProjectByJai.constant.Constant;
 import com.ProjectByJai.helper.LoggerHelper;
+import com.ProjectByJai.testBase.TestBase;
 
 public class NavigationMenu 
 {
@@ -28,17 +29,19 @@ public class NavigationMenu
 	{
 		
 		PageFactory.initElements(Constant.driver, this);
-		
+		TestBase.logExtentReport("Navigation page object created");
 	}
 	public void mouseOver(String data)
 	{
 		log.info("doing mouse over on :"+data);
-		Actions action = new Actions(Constant.driver);
+		TestBase.logExtentReport("doing mouse over on :"+data);
+		Actions action = new Actions(Constant.driver);	
 		action.moveToElement(Constant.driver.findElement(By.xpath("//*[contains(text(),'"+data+"')]"))).build().perform();
 	}
 	public void  clickOnIntem(String data)
 	{
 		log.info("click on : "+data);
+		TestBase.logExtentReport("click on : "+data);
 		Constant.driver.findElement(By.xpath("//*[contains(text(),'"+data+"')]")).click();
 		
 	}

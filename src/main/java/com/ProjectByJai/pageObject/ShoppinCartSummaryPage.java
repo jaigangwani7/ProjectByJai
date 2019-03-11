@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.ProjectByJai.constant.Constant;
 import com.ProjectByJai.helper.LoggerHelper;
+import com.ProjectByJai.testBase.TestBase;
 
 public class ShoppinCartSummaryPage 
 {
@@ -37,28 +38,33 @@ public class ShoppinCartSummaryPage
 	public ShoppinCartSummaryPage()
 	{
 		PageFactory.initElements(Constant.driver, this);
+		TestBase.logExtentReport("Shoppin Cart Summary Page object created");
 	}
 	
 	public void clickOnProceedTocheckOutInCart()
 	{	log.info("Clicked on Proceed to Checkout At Cart");
+		TestBase.logExtentReport("Clicked on Proceed to Checkout At Cart");
 		proceedToCheckOutAtSummary.click();
 	}
 	
 	public void clickOnProceedTocheckOutInAddress()
 	{
 		log.info("Clicked on Proceed to Checkout At Address");
+		TestBase.logExtentReport("Clicked on Proceed to Checkout At Address");
 		proceedToCheckOutAtAddress.click();
 	}
 	
 	public void clickOnTermsOfService()
 	{
 		log.info("Clicked on Terms and Services");
+		TestBase.logExtentReport("Clicked on Terms and Services");
 		termsOfService.click();
 	}
 	
 	public void clickOnProceedTocheckOutInShipping()
 	{
 		log.info("Clicked on Proceed to Checkout At Shipping");
+		TestBase.logExtentReport("Clicked on Proceed to Checkout At Shipping");
 		proceedToCheckOutAtShipping.click();
 	}
 }
