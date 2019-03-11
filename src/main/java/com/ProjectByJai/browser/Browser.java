@@ -21,7 +21,7 @@ public class Browser
 			System.out.println("Working on "+ System.getProperty("os.name")+" and Browser is Chrome");
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver.exe");
 			Constant.driver = new ChromeDriver();
-			//driver.manage().window().maximize();
+			Constant.driver.manage().window().maximize();
 		}
 	}
 	else if(System.getProperty("os.name").contains("Mac")){

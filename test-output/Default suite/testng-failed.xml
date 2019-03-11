@@ -3,17 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.ProjectByJai.testBase.LoginTest">
+      <class name="com.ProjectByJai.testScript.LoginToSalesForce">
         <methods>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
-          <include name="afterTest"/>
           <include name="testValidLogin"/>
         </methods>
-      </class> <!-- com.ProjectByJai.testBase.LoginTest -->
+      </class> <!-- com.ProjectByJai.testScript.LoginToSalesForce -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
